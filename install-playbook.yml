@@ -20,5 +20,11 @@
         - { name: 'xfce4-goodies' }
         - { name: 'xfce4-clipman-plugin' }
         - { name: 'tree' }
+        - { name: 'unclutter' }
+        - { name: 'lxappearance' }
+        - { name: 'conky' }
+        - { name: 'i3' }
+        - { name: 'feh' }
+        - { name: 'scrot' }
    - name: Set zsh as default shell
      raw: chsh lurst -s /usr/bin/zsh

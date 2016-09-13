@@ -13,7 +13,6 @@
         - { name: '.fonts' }
         - { name: '.gitconfig' }
         - { name: '.gitignore_global' }
-        - { name: '.icons' }
         - { name: '.inputrc' }
         - { name: '.psqlrc' }
         - { name: '.tmux.conf' }
