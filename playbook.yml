@@ -20,4 +20,5 @@
         - { name: '.xdg' }
         - { name: '.xmodmap' }
         - { name: '.zshrc' }
+        - { name: '.i3' }
         - { name: 'bin' }
