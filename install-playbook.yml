@@ -1,6 +1,7 @@
 ---
 - hosts: localhost
-  sudo: True
+  become: yes
+  become_method: sudo
   tasks:
    - name: Install things
      apt: pkg={{ item.name }} state=installed update_cache=true
@@ -22,9 +23,11 @@
         - { name: 'tree' }
         - { name: 'unclutter' }
         - { name: 'lxappearance' }
-        - { name: 'conky' }
         - { name: 'i3' }
         - { name: 'feh' }
         - { name: 'scrot' }
+        - { name: 'curl' }
+        - { name: 'lm-sensors' }
+        - { name: 'i3blocks' }
    - name: Set zsh as default shell
      raw: chsh lurst -s /usr/bin/zsh
