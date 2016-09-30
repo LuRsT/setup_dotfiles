@@ -1,0 +1,6 @@
+# {{ ansible_managed }}
+
+{% for k,v in ansible_env.iteritems() %}
+{{ k }}  =  {{ v }}
+
+{% endfor %}

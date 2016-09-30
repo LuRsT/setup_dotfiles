@@ -1,0 +1,13 @@
+---
+- hosts: local
+  connection: local
+  gather_facts: true
+  tasks:
+    - debug: var=hostvars
+
+    - template: src=test.j2 dest=/tmp/env.dat
+
+    - debug:
+        msg: >
+            {{ item.key }} =  {{ item.value }}
+      with_dict: ansible_env
