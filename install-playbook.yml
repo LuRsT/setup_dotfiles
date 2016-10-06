@@ -4,14 +4,16 @@
   become_method: sudo
   tasks:
    - name: Install things
-     apt: pkg={{ item.name }} state=installed update_cache=true
+     apt:
+         pkg={{ item.name }}
+         state=installed
+         update_cache=true
      with_items:
         - { name: 'zsh' }
         - { name: 'redshift' }
         - { name: 'vim-gtk' }
         - { name: 'tmux' }
         - { name: 'vlc' }
-        - { name: 'git' }
         - { name: 'htop' }
         - { name: 'exuberant-ctags' }
         - { name: 'chromium-browser' }

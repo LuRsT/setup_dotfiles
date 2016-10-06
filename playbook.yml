@@ -7,9 +7,16 @@
      key_file: "{{ home_dir }}/.ssh/id_rsa"
   tasks:
    - name: Git clone dotfiles repo
-     git: repo={{ repo_url }} dest={{ repo_dir }} key_file={{ key_file }} recursive=no
+     git:
+         repo={{ repo_url }}
+         dest={{ repo_dir }}
+         key_file={{ key_file }}
+         recursive=no
    - name: Link dotfiles
-     file: src={{ repo_dir }}/{{ item.name }} dest={{ home_dir }}/{{ item.name }} state=link
+     file:
+         src={{ repo_dir }}/{{ item.name }}
+         dest={{ home_dir }}/{{ item.name }}
+         state=link
      with_items:
         - { name: '.nethackrc' }
         - { name: '.bashrc' }
