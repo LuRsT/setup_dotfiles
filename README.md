@@ -1,8 +1,11 @@
-# setup_dotfiles
+# Setup my dotfiles using Ansible
 
+How to use this:
+- Install `ansible`
+- Install `git`
+- Clone this repo
+- Run: `ansible-playbooks playbook.yml`
+- Run: `ansible-playbooks install-playbook.yml`
 
-Todo:
-[ ] Use ansible to get repo from git
-[ ] Configure public keys using ansible?
-[ ] Check this: https://spin.atomicobject.com/2015/09/21/ansible-configuration-management-laptop/
-[ ] Check this: http://docs.ansible.com/ansible/intro_installation.html#latest-releases-via-apt-ubuntu
+TODO:
+- Fix problem where you have to run sudo before running `install-playbook.yml`

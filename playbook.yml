@@ -1,12 +1,15 @@
 ---
 - hosts: localhost
   vars:
-     username: "{{ ansible_user_id }}"
-     home_dir: /home/{{ username }}
-     source_dir: /home/{{ username }}/dev/Setup
+     home_dir: /home/{{ ansible_user_id }}
+     repo_dir: "{{ home_dir }}/dev/Setup"
+     repo_url: git@github.com:LuRsT/Setup.git
+     key_file: "{{ home_dir }}/.ssh/id_rsa"
   tasks:
+   - name: Git clone dotfiles repo
+     git: repo={{ repo_url }} dest={{ repo_dir }} key_file={{ key_file }} recursive=no
    - name: Link dotfiles
-     file: src={{ source_dir }}/{{ item.name }} dest={{ home_dir }}/{{ item.name }} state=link
+     file: src={{ repo_dir }}/{{ item.name }} dest={{ home_dir }}/{{ item.name }} state=link
      with_items:
         - { name: '.nethackrc' }
         - { name: '.bashrc' }
