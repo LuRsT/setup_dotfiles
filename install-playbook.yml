@@ -32,4 +32,4 @@
         - { name: 'lm-sensors' }
         - { name: 'i3blocks' }
    - name: Set zsh as default shell
-     raw: chsh lurst -s /usr/bin/zsh
+     raw: chsh {{ ansible_user_id }} -s /usr/bin/zsh
