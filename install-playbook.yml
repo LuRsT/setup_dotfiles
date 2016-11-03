@@ -33,3 +33,7 @@
         - { name: 'i3blocks' }
    - name: Set zsh as default shell
      raw: chsh {{ ansible_user_id }} -s /usr/bin/zsh
+
+   - name: Improve SSD life
+     shell: echo "tmpfs /tmp tmpfs rw,nosuid,nodev,noatime" >> /etc/fstab
+     shell: echo "vm.swappiness = 10" >> /etc/sysctl.conf
