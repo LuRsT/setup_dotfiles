@@ -30,9 +30,10 @@
         - { name: 'scrot' }
         - { name: 'curl' }
         - { name: 'lm-sensors' }
-        - { name: 'i3blocks' }
         - { name: 'silversearcher-ag' }
         - { name: 'meld' }
+        - { name: 'flake8' }
+        - { name: 'pep8' }
    - name: Set zsh as default shell
      raw: chsh {{ ansible_user_id }} -s /usr/bin/zsh
 
