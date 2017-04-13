@@ -9,6 +9,8 @@
          state=installed
          update_cache=true
      with_items:
+        - { name: 'rofi' }
+        - { name: 'git' }
         - { name: 'zsh' }
         - { name: 'redshift' }
         - { name: 'vim-gtk' }
