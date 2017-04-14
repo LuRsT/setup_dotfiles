@@ -38,6 +38,9 @@
         - { name: 'flake8' }
         - { name: 'pep8' }
         - { name: 'ranger' }
+
+        - { name: 'acpi' }
+        - { name: 'powertop' }
    - name: Set zsh as default shell
      raw: chsh {{ ansible_user_id }} -s /usr/bin/zsh
 
