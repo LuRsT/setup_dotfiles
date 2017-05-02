@@ -10,6 +10,8 @@
          update_cache=true
      with_items:
         - { name: 'rofi' }
+        - { name: 'sakura' }
+        - { name: 'pylint' }
         - { name: 'gparted' }
         - { name: 'git' }
         - { name: 'zsh' }
