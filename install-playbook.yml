@@ -3,6 +3,7 @@
   become: yes
   become_method: sudo
   tasks:
+
    - name: Install things
      apt:
          pkg={{ item.name }}
@@ -40,6 +41,8 @@
         - { name: 'flake8' }
         - { name: 'pep8' }
         - { name: 'ranger' }
+        - { name: 'inotify-tools' }
+        - { name: 'xcape' }
 
         - { name: 'acpi' }
         - { name: 'powertop' }
