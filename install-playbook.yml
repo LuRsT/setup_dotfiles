@@ -10,42 +10,43 @@
          state=installed
          update_cache=true
      with_items:
+        - { name: 'acpi' }
+        - { name: 'chromium-browser' }
+        - { name: 'curl' }
+        - { name: 'exuberant-ctags' }
+        - { name: 'feh' }
+        - { name: 'flake8' }
+        - { name: 'git' }
+        - { name: 'gparted' }
+        - { name: 'htop' }
+        - { name: 'i3' }
+        - { name: 'inotify-tools' }
+        - { name: 'lm-sensors' }
+        - { name: 'lxappearance' }
+        - { name: 'meld' }
+        - { name: 'pep8' }
+        - { name: 'powertop' }
+        - { name: 'pylint' }
+        - { name: 'ranger' }
+        - { name: 'redshift' }
         - { name: 'rofi' }
         - { name: 'sakura' }
-        - { name: 'pylint' }
-        - { name: 'gparted' }
-        - { name: 'git' }
-        - { name: 'zsh' }
-        - { name: 'redshift' }
-        - { name: 'vim-gtk' }
-        - { name: 'tmux' }
-        - { name: 'vlc' }
-        - { name: 'htop' }
-        - { name: 'exuberant-ctags' }
-        - { name: 'chromium-browser' }
-        - { name: 'virtualenvwrapper' }
-        - { name: 'vlc-plugin-vlsub' }
+        - { name: 'scrot' }
         - { name: 'sensors-applet' }
-        - { name: 'xfce4-goodies' }
-        - { name: 'xfce4-clipman-plugin' }
+        - { name: 'silversearcher-ag' }
+        - { name: 'tmux' }
         - { name: 'tree' }
         - { name: 'unclutter' }
-        - { name: 'lxappearance' }
-        - { name: 'i3' }
-        - { name: 'feh' }
-        - { name: 'scrot' }
-        - { name: 'curl' }
-        - { name: 'lm-sensors' }
-        - { name: 'silversearcher-ag' }
-        - { name: 'meld' }
-        - { name: 'flake8' }
-        - { name: 'pep8' }
-        - { name: 'ranger' }
-        - { name: 'inotify-tools' }
+        - { name: 'unrar' }
+        - { name: 'vim-gtk' }
+        - { name: 'virtualenvwrapper' }
+        - { name: 'vlc' }
+        - { name: 'vlc-plugin-vlsub' }
         - { name: 'xcape' }
+        - { name: 'xfce4-clipman-plugin' }
+        - { name: 'xfce4-goodies' }
+        - { name: 'zsh' }
 
-        - { name: 'acpi' }
-        - { name: 'powertop' }
    - name: Set zsh as default shell
      raw: chsh {{ ansible_user_id }} -s /usr/bin/zsh
 
