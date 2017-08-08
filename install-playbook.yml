@@ -43,6 +43,7 @@
         - { name: 'vlc' }
         - { name: 'vlc-plugin-vlsub' }
         - { name: 'xcape' }
+        - { name: 'xclip' }
         - { name: 'xfce4-clipman-plugin' }
         - { name: 'xfce4-goodies' }
         - { name: 'zsh' }
