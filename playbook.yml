@@ -33,3 +33,4 @@
         - { name: '.i3' }
         - { name: '.commonshellrc' }
         - { name: 'bin' }
+        - { name: '.pylintrc' }
