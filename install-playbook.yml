@@ -47,6 +47,8 @@
         - { name: 'xfce4-clipman-plugin' }
         - { name: 'xfce4-goodies' }
         - { name: 'zsh' }
+        - { name: 'python3.6' }
+        - { name: 'moc' }
 
    - name: Set zsh as default shell
      raw: chsh {{ ansible_user_id }} -s /usr/bin/zsh
