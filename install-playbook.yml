@@ -17,16 +17,20 @@
         - { name: 'feh' }
         - { name: 'flake8' }
         - { name: 'git' }
+        - { name: 'glances' }
         - { name: 'gparted' }
         - { name: 'htop' }
+        - { name: 'httpie' }
         - { name: 'i3' }
         - { name: 'inotify-tools' }
         - { name: 'lm-sensors' }
         - { name: 'lxappearance' }
         - { name: 'meld' }
+        - { name: 'moc' }
         - { name: 'pep8' }
         - { name: 'powertop' }
         - { name: 'pylint' }
+        - { name: 'python3.6' }
         - { name: 'ranger' }
         - { name: 'redshift' }
         - { name: 'rofi' }
@@ -34,6 +38,7 @@
         - { name: 'scrot' }
         - { name: 'sensors-applet' }
         - { name: 'silversearcher-ag' }
+        - { name: 'tig' }
         - { name: 'tmux' }
         - { name: 'tree' }
         - { name: 'unclutter' }
@@ -42,13 +47,12 @@
         - { name: 'virtualenvwrapper' }
         - { name: 'vlc' }
         - { name: 'vlc-plugin-vlsub' }
+        - { name: 'weechat' }
         - { name: 'xcape' }
         - { name: 'xclip' }
         - { name: 'xfce4-clipman-plugin' }
         - { name: 'xfce4-goodies' }
         - { name: 'zsh' }
-        - { name: 'python3.6' }
-        - { name: 'moc' }
 
    - name: Set zsh as default shell
      raw: chsh {{ ansible_user_id }} -s /usr/bin/zsh
