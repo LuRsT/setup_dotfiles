@@ -62,8 +62,7 @@
         - {name: 'rofi' }
         - {name: 'powertop' }
         - {name: 'udisks2' }
+        - {name: 'pcmanfm' }
 
-        # For thumbnails in thunar
-        - {name: 'tumbler' }
         # For samba share
         - {name: 'gvfs-smb' }
