@@ -63,6 +63,8 @@
         - {name: 'powertop' }
         - {name: 'udisks2' }
         - {name: 'pcmanfm' }
+        - { name: 'pavucontrol' }
+        - { name: 'pulseaudio' }
 
         # For samba share
         - {name: 'gvfs-smb' }
