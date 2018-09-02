@@ -9,62 +9,83 @@
          state=installed
          update_cache=true
      with_items:
-          # My dev env
-        - {name: 'neovim' }
-        - {name: 'git' }
-        - {name: 'python' }
-        - {name: 'openssh' }
-        - {name: 'zsh' }
-        - {name: 'tmux' }
-        - {name: 'viewnior' }
-        - {name: 'ctags' }
-        - {name: 'ansible' }
-        - {name: 'imagemagick' }
-        - {name: 'python-virtualenvwrapper' }
-        - {name: 'python-neovim' }
+        # My dev env
+        - { name: 'neovim' }
+        - { name: 'git' }
+        - { name: 'python' }
+        - { name: 'openssh' }
+        - { name: 'zsh' }
+        - { name: 'tmux' }
+        - { name: 'viewnior' }
+        - { name: 'ctags' }
+        - { name: 'ansible' }
+        - { name: 'imagemagick' }
+        - { name: 'python-virtualenvwrapper' }
+        - { name: 'python-neovim' }
+        - { name: 'the_silver_searcher' }
+        - { name: 'bat' }
+        - { name: 'exa' }
+        - { name: 'ripgrep' }
 
         # OS
-        - {name: 'pkg-config' }
-        - {name: 'grub' }
-        - {name: 'intel-ucode' }
-        - {name: 'sudo' }
-        - {name: 'sway' }
-        - {name: 'tlp' }
-        - {name: 'tp_smapi' }
-        - {name: 'x86_energy_perf_policy' }
-        - {name: 'acpi_call' }
-        - {name: 'ttf-liberation' }
-        - {name: 'cryptsetup' }
-        - {name: 'wpa_supplicant' }
-        - {name: 'acpi' }
-        - {name: 'xorg-fonts-misc' }
-        - {name: 'wireless_tools' }
-        - {name: 'mplayer' }
-        - {name: 'youtube-dl' }
-        - {name: 'networkmanager' }
+        - { name: 'pkg-config' }
+        - { name: 'grub' }
+        - { name: 'intel-ucode' }
+        - { name: 'sudo' }
+        - { name: 'tlp' }
+        - { name: 'tp_smapi' }
+        - { name: 'x86_energy_perf_policy' }
+        - { name: 'acpi_call' }
+        - { name: 'ttf-liberation' }
+        - { name: 'cryptsetup' }
+        - { name: 'wpa_supplicant' }
+        - { name: 'acpi' }
+        - { name: 'xorg-fonts-misc' }
+        - { name: 'wireless_tools' }
+        - { name: 'mplayer' }
+        - { name: 'youtube-dl' }
+        - { name: 'scrot' }
+        - { name: 'lxappearance' }
+        - { name: 'i3-wm' }
+        - { name: 'i3lock' }
+        - { name: 'xorg-server' }
+        - { name: 'xf86-video-intel' }
+        - { name: 'xf86-video-intel' }
+        - { name: 'xorg-xinit' }
+        - { name: 'htop' }
+        - { name: 'unzip' }
+        - { name: 'unrar' }
+        - { name: 'feh' }
+        - { name: 'arc-gtk-theme' }
+        - { name: 'arc-icon-theme' }
+        - { name: 'dialog' } # For wifi-menu
 
         # For st
-        - {name: 'cmake ' }
-        - {name: 'fontconfig ' }
-        - {name: 'freetype2 ' }
-        - {name: 'gcc' }
-        - {name: 'libxext ' }
-        - {name: 'ncurses ' }
-        - {name: 'libxft ' }
-        - {name: 'make ' }
+        - { name: 'cmake ' }
+        - { name: 'fontconfig ' }
+        - { name: 'freetype2 ' }
+        - { name: 'gcc' }
+        - { name: 'libxext ' }
+        - { name: 'ncurses ' }
+        - { name: 'libxft ' }
+        - { name: 'make ' }
 
         # Extra
-        - {name: 'screenfetch ' }
-        - {name: 'cmatrix' }
-        - {name: 'firefox' }
-        - {name: 'openssh' }
-        - {name: 'ranger' }
-        - {name: 'rofi' }
-        - {name: 'powertop' }
-        - {name: 'udisks2' }
-        - {name: 'pcmanfm' }
+        - { name: 'screenfetch ' }
+        - { name: 'cmatrix' }
+        - { name: 'firefox' }
+        - { name: 'openssh' }
+        - { name: 'rofi' }
+        - { name: 'powertop' }
+        - { name: 'udisks2' }
+        - { name: 'pcmanfm' }
         - { name: 'pavucontrol' }
         - { name: 'pulseaudio' }
+        - { name: 'ranger' }
+
+        # For ranger
+        - { name: 'highlight' }
+        - { name: 'w3m' }
 
         # For samba share
-        - {name: 'gvfs-smb' }
+        - { name: 'gvfs-smb' }
