@@ -28,6 +28,7 @@
         - { name: 'ripgrep' }
 
         # OS
+        - { name: 'termite' }
         - { name: 'pkg-config' }
         - { name: 'grub' }
         - { name: 'intel-ucode' }
@@ -37,6 +38,7 @@
         - { name: 'x86_energy_perf_policy' }
         - { name: 'acpi_call' }
         - { name: 'ttf-liberation' }
+        - { name: 'ttf-dejavu' }
         - { name: 'cryptsetup' }
         - { name: 'wpa_supplicant' }
         - { name: 'acpi' }
@@ -59,16 +61,6 @@
         - { name: 'arc-gtk-theme' }
         - { name: 'arc-icon-theme' }
         - { name: 'dialog' } # For wifi-menu
-
-        # For st
-        - { name: 'cmake ' }
-        - { name: 'fontconfig ' }
-        - { name: 'freetype2 ' }
-        - { name: 'gcc' }
-        - { name: 'libxext ' }
-        - { name: 'ncurses ' }
-        - { name: 'libxft ' }
-        - { name: 'make ' }
 
         # Extra
         - { name: 'screenfetch ' }
