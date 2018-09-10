@@ -55,10 +55,14 @@
         - { name: 'xf86-video-intel' }
         - { name: 'xorg-xinit' }
         - { name: 'htop' }
+        - { name: 'zip' }
+        - { name: 'p7zip' }
         - { name: 'unzip' }
         - { name: 'unrar' }
         - { name: 'feh' }
         - { name: 'vlc' }
+        - { name: 'redshift' }
+        - { name: 'unclutter' }
         - { name: 'arc-gtk-theme' }
         - { name: 'arc-icon-theme' }
         - { name: 'dialog' } # For wifi-menu
