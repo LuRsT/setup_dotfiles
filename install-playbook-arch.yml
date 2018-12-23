@@ -79,6 +79,8 @@
         - { name: 'pavucontrol' }
         - { name: 'pulseaudio' }
         - { name: 'ranger' }
+        - { name: 'mtpfs' }    # For connecting with android
+        - { name: 'gvfs-mtp' }
 
         # For ranger
         - { name: 'highlight' }
