@@ -25,6 +25,8 @@
         - { name: 'the_silver_searcher' }
         - { name: 'bat' }
         - { name: 'exa' }
+        - { name: 'xsel' }
+        - { name: 'xclip' }
         - { name: 'ripgrep' }
 
         # OS
@@ -55,6 +57,7 @@
         - { name: 'xf86-video-intel' }
         - { name: 'xorg-xinit' }
         - { name: 'htop' }
+        - { name: 'lsof' }
         - { name: 'zip' }
         - { name: 'p7zip' }
         - { name: 'unzip' }
@@ -81,6 +84,7 @@
         - { name: 'ranger' }
         - { name: 'mtpfs' }    # For connecting with android
         - { name: 'gvfs-mtp' }
+        - { name: 'fd' }
 
         # For ranger
         - { name: 'highlight' }
