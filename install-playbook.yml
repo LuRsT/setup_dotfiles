@@ -14,7 +14,7 @@
         - { name: 'git' }
         - { name: 'python' }
         - { name: 'openssh' }
-        - { name: 'zsh' }
+        - { name: 'fish' }
         - { name: 'tmux' }
         - { name: 'viewnior' }
         - { name: 'ctags' }
