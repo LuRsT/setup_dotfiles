@@ -27,7 +27,7 @@
         - { name: '.psqlrc' }
         - { name: '.tmux.conf' }
         - { name: '.Xdefaults' }
-        - { name: '.xdg' }
+        - { name: '.config' }
         - { name: '.xmodmap' }
         - { name: '.zshrc' }
         - { name: '.i3' }
