@@ -30,6 +30,7 @@
         - { name: 'ripgrep' }
 
         # OS
+        - { name: 'time' }
         - { name: 'termite' }
         - { name: 'pkg-config' }
         - { name: 'grub' }
