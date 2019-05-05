@@ -11,14 +11,11 @@
      with_items:
         # My dev env
         - { name: 'neovim' }
-        - { name: 'git' }
-        - { name: 'python' }
         - { name: 'openssh' }
         - { name: 'fish' }
         - { name: 'tmux' }
         - { name: 'viewnior' }
         - { name: 'ctags' }
-        - { name: 'ansible' }
         - { name: 'imagemagick' }
         - { name: 'python-virtualenvwrapper' }
         - { name: 'python-neovim' }
@@ -33,16 +30,13 @@
         - { name: 'time' }
         - { name: 'termite' }
         - { name: 'pkg-config' }
-        - { name: 'grub' }
         - { name: 'intel-ucode' }
-        - { name: 'sudo' }
         - { name: 'tlp' }
         - { name: 'tp_smapi' }
         - { name: 'x86_energy_perf_policy' }
         - { name: 'acpi_call' }
         - { name: 'ttf-liberation' }
         - { name: 'ttf-dejavu' }
-        - { name: 'cryptsetup' }
         - { name: 'wpa_supplicant' }
         - { name: 'acpi' }
         - { name: 'xorg-fonts-misc' }
@@ -75,7 +69,6 @@
         - { name: 'screenfetch ' }
         - { name: 'cmatrix' }
         - { name: 'firefox' }
-        - { name: 'openssh' }
         - { name: 'rofi' }
         - { name: 'powertop' }
         - { name: 'udisks2' }
