@@ -11,6 +11,7 @@
      with_items:
         # My dev env
         - { name: 'neovim' }
+        - { name: 'entr' }
         - { name: 'openssh' }
         - { name: 'fish' }
         - { name: 'tmux' }
