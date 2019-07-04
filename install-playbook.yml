@@ -80,6 +80,7 @@
         - { name: 'mtpfs' }    # For connecting with android
         - { name: 'gvfs-mtp' }
         - { name: 'fd' }
+        - { name: 'time' }
 
         # For ranger
         - { name: 'highlight' }
