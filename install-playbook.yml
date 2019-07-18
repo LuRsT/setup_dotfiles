@@ -41,6 +41,7 @@
         - { name: 'wpa_supplicant' }
         - { name: 'acpi' }
         - { name: 'xorg-fonts-misc' }
+        - { name: 'xorg-xrandr' }
         - { name: 'wireless_tools' }
         - { name: 'mplayer' }
         - { name: 'youtube-dl' }
