@@ -82,6 +82,7 @@
         - { name: 'gvfs-mtp' }
         - { name: 'fd' }
         - { name: 'time' }
+        - { name: 'ffmpegthumbnailer' } # For thumbnails in videos
 
         # For ranger
         - { name: 'highlight' }
