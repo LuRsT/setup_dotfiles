@@ -26,8 +26,10 @@
         - { name: 'xsel' }
         - { name: 'xclip' }
         - { name: 'ripgrep' }
+        - { name: 'xfce4-clipman-plugin' }
 
         # OS
+        - { name: 'base' }
         - { name: 'time' }
         - { name: 'keychain' }
         - { name: 'termite' }
