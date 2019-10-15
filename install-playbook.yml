@@ -29,6 +29,7 @@
 
         # OS
         - { name: 'time' }
+        - { name: 'keychain' }
         - { name: 'termite' }
         - { name: 'pkg-config' }
         - { name: 'intel-ucode' }
