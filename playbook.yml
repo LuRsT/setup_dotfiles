@@ -34,3 +34,4 @@
         - { name: '.commonshellrc' }
         - { name: 'bin' }
         - { name: '.pylintrc' }
+        - { name: '.spacemacs' }
