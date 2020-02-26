@@ -27,6 +27,7 @@
         - { name: 'xclip' }
         - { name: 'ripgrep' }
         - { name: 'xfce4-clipman-plugin' }
+        - { name: 'fzf' }
 
         # OS
         - { name: 'base' }
