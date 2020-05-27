@@ -28,6 +28,10 @@
         - { name: 'ripgrep' }
         - { name: 'xfce4-clipman-plugin' }
         - { name: 'fzf' }
+        - { name: 'base-devel' }
+        - { name: 'libpng' }
+        - { name: 'zlib' }
+        - { name: 'popp' }
 
         # OS
         - { name: 'base' }
