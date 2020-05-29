@@ -26,6 +26,7 @@
         - { name: '.inputrc' }
         - { name: '.psqlrc' }
         - { name: '.tmux.conf' }
+        - { name: '.tmate.conf' }
         - { name: '.Xdefaults' }
         - { name: '.config' }
         - { name: '.xmodmap' }
