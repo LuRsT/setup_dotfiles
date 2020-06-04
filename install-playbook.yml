@@ -91,6 +91,7 @@
         - { name: 'fd' }
         - { name: 'time' }
         - { name: 'ffmpegthumbnailer' } # For thumbnails in videos
+        - { name: 'peek' } # Makeing gifs
 
         # For ranger
         - { name: 'highlight' }
