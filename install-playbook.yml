@@ -92,6 +92,7 @@
         - { name: 'time' }
         - { name: 'ffmpegthumbnailer' } # For thumbnails in videos
         - { name: 'peek' } # Makeing gifs
+        - { name: 'cmake' } # For vterm in emacs
 
         # For ranger
         - { name: 'highlight' }
