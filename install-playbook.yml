@@ -32,6 +32,7 @@
         - { name: 'libpng' }
         - { name: 'zlib' }
         - { name: 'popp' }
+        - { name: 'make' }
 
         # OS
         - { name: 'base' }
@@ -93,6 +94,9 @@
         - { name: 'ffmpegthumbnailer' } # For thumbnails in videos
         - { name: 'peek' } # Makeing gifs
         - { name: 'cmake' } # For vterm in emacs
+        - { name: 'gcc' } # suckless tools
+        - { name: 'git-annex' } # suckless tools
+        - { name: 'strace' }
 
         # For ranger
         - { name: 'highlight' }
