@@ -35,4 +35,9 @@
         - { name: '.commonshellrc' }
         - { name: 'bin' }
         - { name: '.pylintrc' }
-        - { name: '.spacemacs' }
+
+   - name: Install pip dependencies
+     pip:
+        name:
+          - python-language-server[all]
+        extra_args: --user --upgrade
