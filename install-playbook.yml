@@ -3,104 +3,104 @@
   become: yes
   become_method: sudo
   tasks:
-   - name: Install things
+   - name: Install packages for my dev setup
      pacman:
-         pkg={{ item.name }}
-         state=installed
-         update_cache=true
-     with_items:
-        # My dev env
-        - { name: 'neovim' }
-        - { name: 'entr' }
-        - { name: 'openssh' }
-        - { name: 'fish' }
-        - { name: 'tmux' }
-        - { name: 'viewnior' }
-        - { name: 'ctags' }
-        - { name: 'imagemagick' }
-        - { name: 'python-virtualenvwrapper' }
-        - { name: 'python-neovim' }
-        - { name: 'the_silver_searcher' }
-        - { name: 'bat' }
-        - { name: 'exa' }
-        - { name: 'xsel' }
-        - { name: 'xclip' }
-        - { name: 'ripgrep' }
-        - { name: 'xfce4-clipman-plugin' }
-        - { name: 'fzf' }
-        - { name: 'base-devel' }
-        - { name: 'libpng' }
-        - { name: 'zlib' }
-        - { name: 'popp' }
-        - { name: 'make' }
+       state: installed
+       update_cache: true
+       name:
+        - neovim 
+        - entr 
+        - openssh 
+        - fish 
+        - tmux 
+        - viewnior 
+        - ctags 
+        - imagemagick 
+        - python-virtualenvwrapper 
+        - python-neovim 
+        - the_silver_searcher 
+        - bat 
+        - exa 
+        - xsel 
+        - xclip 
+        - ripgrep 
+        - xfce4-clipman-plugin 
+        - fzf 
+        - base-devel 
+        - libpng 
+        - zlib 
+        - make 
+   - name: Install packages for the OS
+     pacman:
+       state: installed
+       update_cache: true
+       name:
+        - base 
+        - time 
+        - keychain 
+        - termite 
+        - pkg-config 
+        - intel-ucode 
+        - tlp 
+        - tp_smapi 
+        - x86_energy_perf_policy 
+        - acpi_call 
+        - ttf-liberation 
+        - ttf-dejavu 
+        - wpa_supplicant 
+        - acpi 
+        - xorg-fonts-misc 
+        - xorg-xrandr 
+        - wireless_tools 
+        - mplayer 
+        - youtube-dl 
+        - scrot 
+        - lxappearance 
+        - i3-wm 
+        - i3lock 
+        - xorg-server 
+        - xf86-video-intel 
+        - xf86-video-intel 
+        - xorg-xinit 
+        - htop 
+        - lsof 
+        - zip 
+        - p7zip 
+        - unzip 
+        - unrar 
+        - feh 
+        - vlc 
+        - redshift 
+        - unclutter 
+        - arc-gtk-theme 
+        - arc-icon-theme 
+        - dialog # For wifi-menu
 
-        # OS
-        - { name: 'base' }
-        - { name: 'time' }
-        - { name: 'keychain' }
-        - { name: 'termite' }
-        - { name: 'pkg-config' }
-        - { name: 'intel-ucode' }
-        - { name: 'tlp' }
-        - { name: 'tp_smapi' }
-        - { name: 'x86_energy_perf_policy' }
-        - { name: 'acpi_call' }
-        - { name: 'ttf-liberation' }
-        - { name: 'ttf-dejavu' }
-        - { name: 'wpa_supplicant' }
-        - { name: 'acpi' }
-        - { name: 'xorg-fonts-misc' }
-        - { name: 'xorg-xrandr' }
-        - { name: 'wireless_tools' }
-        - { name: 'mplayer' }
-        - { name: 'youtube-dl' }
-        - { name: 'scrot' }
-        - { name: 'lxappearance' }
-        - { name: 'i3-wm' }
-        - { name: 'i3lock' }
-        - { name: 'xorg-server' }
-        - { name: 'xf86-video-intel' }
-        - { name: 'xf86-video-intel' }
-        - { name: 'xorg-xinit' }
-        - { name: 'htop' }
-        - { name: 'lsof' }
-        - { name: 'zip' }
-        - { name: 'p7zip' }
-        - { name: 'unzip' }
-        - { name: 'unrar' }
-        - { name: 'feh' }
-        - { name: 'vlc' }
-        - { name: 'redshift' }
-        - { name: 'unclutter' }
-        - { name: 'arc-gtk-theme' }
-        - { name: 'arc-icon-theme' }
-        - { name: 'dialog' } # For wifi-menu
-
-        # Extra
-        - { name: 'screenfetch ' }
-        - { name: 'cmatrix' }
-        - { name: 'firefox' }
-        - { name: 'rofi' }
-        - { name: 'powertop' }
-        - { name: 'udisks2' }
-        - { name: 'pcmanfm' }
-        - { name: 'pavucontrol' }
-        - { name: 'pulseaudio' }
-        - { name: 'ranger' }
-        - { name: 'mtpfs' }    # For connecting with android
-        - { name: 'gvfs-mtp' }
-        - { name: 'fd' }
-        - { name: 'time' }
-        - { name: 'ffmpegthumbnailer' } # For thumbnails in videos
-        - { name: 'peek' } # Makeing gifs
-        - { name: 'cmake' } # For vterm in emacs
-        - { name: 'gcc' } # suckless tools
-        - { name: 'git-annex' } # suckless tools
-        - { name: 'strace' }
-
-        # For ranger
-        - { name: 'highlight' }
-        - { name: 'w3m' }
-
-        # For samba share
-        - { name: 'gvfs-smb' }
+   - name: Install extra packages 
+     pacman:
+       state: installed
+       update_cache: true
+       name:
+        - screenfetch
+        - cmatrix 
+        - firefox 
+        - rofi 
+        - powertop 
+        - udisks2 
+        - pcmanfm 
+        - pavucontrol 
+        - pulseaudio 
+        - ranger 
+        - mtpfs  # For connecting with androi
+        - gvfs-mtp 
+        - fd 
+        - time 
+        - ffmpegthumbnailer # For thumbnails in video
+        - peek  # Makeing gif
+        - cmake  # For vterm in emac
+        - gcc  # suckless tool
+        - git-annex # suckless tool
+        - strace 
+        - highlight # For ranger
+        - w3m # For ranger
+        - gvfs-smb # For samba share
