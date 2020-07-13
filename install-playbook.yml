@@ -18,6 +18,9 @@
         - imagemagick 
         - python-virtualenvwrapper 
         - python-neovim 
+        - python-isort 
+        - python-pyflakes 
+        - python-poetry 
         - the_silver_searcher 
         - bat 
         - exa 
@@ -104,3 +107,10 @@
         - highlight # For ranger
         - w3m # For ranger
         - gvfs-smb # For samba share
+        - simplescreenrecorder
+        - calibre
+        - discord
+        - chromium
+        - wget
+        - rust
+        - arch-wiki-docs
