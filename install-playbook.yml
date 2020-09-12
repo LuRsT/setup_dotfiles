@@ -114,3 +114,5 @@
         - wget
         - rust
         - arch-wiki-docs
+        - smartmontools # tlp-stat recomendation
+        - ethtool  # tlp-stat recomendation
