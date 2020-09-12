@@ -46,3 +46,4 @@
         name: emacs
         enabled: yes
         scope: user
+
